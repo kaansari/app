@@ -4,7 +4,7 @@ machine:
 test:
   override:
     - docker-compose run -d --no-deps web
-    - cd app; mocha
+    - mocha
 deployment:
   hub:
     branch: master
